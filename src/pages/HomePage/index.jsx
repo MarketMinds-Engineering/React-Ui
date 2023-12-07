@@ -10,6 +10,7 @@ import {
 } from "react-accessible-accordion";
 
 import { Button, Img, Text } from "components";
+import NavBar from "pages/NavBar/NavBar";
 
 const HomePagePage = () => {
   const openGoogle = () => {
@@ -21,67 +22,10 @@ const HomePagePage = () => {
       <div className="bg-white-A700 flex flex-col items-center justify-end mx-auto pt-[19px] w-full">
         <div className="flex flex-col justify-end w-full">
           <div className="font-mulish md:h-[490px] sm:h-[670px] h-[796px] mr-[58px] md:px-5 relative w-[96%] md:w-full">
-            <div className="absolute md:h-[490px] h-[670px] inset-x-[0] mx-auto top-[3%] w-[90%] md:w-full">
-            <div className="absolute md:h-[127px] h-[132px] left-[0] top-[0] w-[15%]">
-              <Img
-                className="absolute h-[127px] inset-[0] justify-center m-auto object-cover w-full"
-                src="images/img_marketmindslogo.png"
-                alt="marketmindslogo"
-              />
-              <Img
-                className="absolute bottom-[0] h-12 inset-x-[0] mx-auto object-cover w-full"
-                src="images/img_rectangle34626545.png"
-                alt="rectangle346265"
-              />
-            </div>  
-            <div className="flex items-center  whitespace-nowrap gap-10 sm:w-full ml-96  mt-2 w-3/5">
-                  <span
-                    className=" font-bold text-blue-600  "
-                     size="txtMulishRomanExtraBold16"
-                  >
-                    Home
-                  </span>
-                  <span
-                    className="text-base text-gray-600 w-auto cursor-pointer"
-                    size="txtMulishRegular16"
-                    onClick={openGoogle}
-                  >
-                    How It Works
-                  </span>
-                  <span
-                    className="text-base text-gray-600 w-auto cursor-pointer"
-                    onClick={openGoogle}
-                  >
-                    FAQs
-                  </span>
-                  <span
-                    className="text-base text-gray-600 w-auto cursor-pointer"
-                    onClick={openGoogle}
-                  >
-                    Contact Us
-                  </span>
-                  <span
-                    className="text-base text-gray-600 w-auto cursor-pointer"
-                    onClick={openGoogle}
-                  >
-                    Login
-                  </span>
-                  <Button
-                      className="cursor-pointer font-bold leading-[normal] min-w-[163px] text-base text-center"
-                      shape="round"
-                      size="lg"
-                      onClick={openGoogle}
-                    >
-                      Register
-                    </Button>
-                    <Img
-              className="absolute h-6 right-[0] top-[3%] w-6"
-              src="images/img_search.svg"
-              alt="search"
-            />
-              </div>
-              <div className="absolute flex flex-col h-full inset-[0] items-center justify-center m-auto w-full">
-                <div className="flex flex-col md:gap-10 gap-[220px] justify-start w-full">
+             
+                 <NavBar/>
+              
+                <div className="flex flex-col md:gap-10 mt-5 gap-[220px] justify-start w-full">
                   
                   <div className="flex flex-col gap-[45px] items-start justify-start mr-[477px] w-[62%] md:w-full">
                     <div className="flex flex-col gap-[17px] items-start justify-start w-full">
@@ -125,8 +69,7 @@ const HomePagePage = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
+      
            
             <div className="absolute bottom-[0] md:h-[393px] h-[616px] right-[1%] w-[38%] sm:w-full">
               <Img
