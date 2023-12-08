@@ -41,6 +41,8 @@ const ProjectRoutes = () => {
           <Route path="/registerpage" element={<RegisterPage />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
           <Route path="/verifyemail" element={<VerifyEmail />} />
+          <Route path="/login" element={<LoginPage />} />
+
           <Route
             path="/emailaddressverifiedsuccessfully"
             element={<EmailAddressVerifiedSuccessfully />}

@@ -4,9 +4,10 @@ import { BookOpenIcon, Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/
 const NavBar = () => {
     let Links =[
         {name:"HOME",link:"/"},
-        {name:"SERVICE",link:"/"},
-        {name:"ABOUT",link:"/"},
-        {name:"CONTACT",link:"/"},
+        {name:"How It's Work",link:"/"},
+        {name:"FAQs",link:"/"},
+        {name:"ContactUs",link:"/"},
+        {name:"Login",link:"/login"},
       ];
       let [open, setOpen] =useState(false);
 
