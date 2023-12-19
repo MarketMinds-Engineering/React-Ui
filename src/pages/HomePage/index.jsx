@@ -13,6 +13,13 @@ import { Button, Img, Text } from "components";
 import NavBar from "pages/NavBar/NavBar";
 
 const HomePagePage = () => {
+  const PerformanceBenchmarkScreenPageHeader = [
+    "Dashboard",
+    "Journals",
+    "Trading",
+    "Assesments",
+    "Learning",
+  ];
   const openGoogle = () => {
     console.log("Sdsdsd");
     window.open('https://www.google.com', '_blank');
@@ -23,8 +30,7 @@ const HomePagePage = () => {
         <div className="flex flex-col justify-end w-full">
           <div className="font-mulish md:h-[490px] sm:h-[670px] h-[796px] mr-[58px] md:px-5 relative w-[96%] md:w-full">
              
-                 <NavBar/>
-              
+          <NavBar header={PerformanceBenchmarkScreenPageHeader} />              
                 <div className="flex flex-col md:gap-10 mt-5 gap-[220px] justify-start w-full">
                   
                   <div className="flex flex-col gap-[45px] items-start justify-start mr-[477px] w-[62%] md:w-full">
