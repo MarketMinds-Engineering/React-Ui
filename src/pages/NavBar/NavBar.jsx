@@ -2,42 +2,31 @@ import React, { useState } from 'react';
 import { BookOpenIcon, Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
 
 const NavBar = () => {
-    let Links =[
-        {name:"HOME",link:"/"},
-        {name:"How It's Work",link:"/"},
-        {name:"FAQs",link:"/"},
-        {name:"ContactUs",link:"/"},
-        {name:"Login",link:"/login"},
-      ];
-      let [open, setOpen] =useState(false);
+   
 
     return (
-        <div className='shadow-md w-full fixed top-0 left-0'>
-           <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
-            {/* logo section */}
-            <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
-                <BookOpenIcon className='w-7 h-7 text-blue-600'/>
-                <span>MarketMind</span>
-            </div>
-            {/* Menu icon */}
-            <div onClick={()=>setOpen(!open)} className='absolute right-8 top-6 cursor-pointer md:hidden w-7 h-7'>
-                {
-                    open ? <XMarkIcon/> : <Bars3BottomRightIcon />
-                }
-            </div>
-            {/* linke items */}
-            <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-12' : 'top-[-490px]'}`}>
-                {
-                    Links.map((link) => (
-                    <li className='md:ml-8 md:my-0 my-7 font-semibold'>
-                        <a href={link.link} className='text-gray-800 hover:text-blue-400 duration-500'>{link.name}</a>
-                    </li>))
-                }
-                <button className='btn bg-blue-600 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static'>Get Started</button>
-            </ul>
-            {/* button */}
-           </div>
+        <>
+
+<nav className="bg-white border-gray-200 dark:bg-gray-900">
+    <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+    <img src="images/abc.png" className="h-16 w-16 rounded-full" alt="Logo" />
+        <div className="flex items-center space-x-6 rtl:space-x-reverse">
+
+            <a href="tel:5541251234" className="text-sm  text-blue-600 font-extrabold underline dark:text-white hover:underline">Home</a>
+            <a href="tel:5541251234" className="text-sm  text-gray-500 dark:text-white hover:underline">How its Work</a>
+
+            <a href="tel:5541251234" className="text-sm  text-gray-500 dark:text-white hover:underline">FAQs</a>
+            <a href="tel:5541251234" className="text-sm  text-gray-500 dark:text-white hover:underline">ContactUs</a>
+            <button
+    type="button"
+    className="rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+  >
+Register  </button>
         </div>
+    </div>
+</nav>
+
+</>
     );
 };
 
