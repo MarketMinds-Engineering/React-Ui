@@ -28,79 +28,106 @@ const HomePagePage = () => {
     <>
       <div className="bg-white-A700 flex flex-col items-center justify-end mx-auto pt-[19px] w-full">
         <div className="flex flex-col justify-end w-full">
-          <div className="font-mulish md:h-[490px] sm:h-[670px] h-[796px] mr-[58px] md:px-5 relative w-[96%] md:w-full">
              
           <NavBar header={PerformanceBenchmarkScreenPageHeader} />              
-                <div className="flex flex-col md:gap-10 mt-5 gap-[220px] justify-start w-full">
-                  
-                  <div className="flex flex-col gap-[45px] items-start justify-start mr-[477px] w-[62%] md:w-full">
-                    <div className="flex flex-col gap-[17px] items-start justify-start w-full">
-                      <Text
-                        className="leading-[75.00px] sm:text-[37px] md:text-[43px] text-[51px] text-blue_gray-800 w-full"
-                        size="txtVigaRegular51"
-                      >
-                        <span className="text-black-900_b5 tracking-[0.51px] font-mazzard text-left font-semibold">
-                          Provide you with a Awesome AI-driven{" "}
-                        </span>
-                        <span className="text-blue-600 tracking-[0.51px] font-mazzard text-left font-semibold">
-                          Trading.
-                        </span>
-                      </Text>
-                      <Text
-                        className="leading-[40.00px] text-2xl md:text-[22px] text-gray-500 sm:text-xl w-[89%] sm:w-full"
-                        size="txtMulishRegular24"
-                      >
-                        Lorem ipsum dolor sit amet consectetur. Enim a tincidunt
-                        sem libero quam id ut vulputate. Faucibus semper cras
-                        imperdiet morbi tristique vulputate. Augue.
-                      </Text>
-                    </div>
-                    <div className="flex flex-row gap-[31px] items-center justify-start w-[49%] md:w-full">
-                      <Button
-                        className="cursor-pointer font-semibold leading-[normal] min-w-[170px] text-base text-center"
-                        shape="round"
-                        size="lg"
-                      >
-                        Get Started
-                      </Button>
-                      <Button
-                        className="cursor-pointer font-semibold leading-[normal] min-w-[163px] text-base text-center"
-                        shape="round"
-                        color="black_900"
-                        size="lg"
-                        variant="outline"
-                      >
-                        How It Works
-                      </Button>
-                    </div>
-                  </div>
-                </div>
+                
       
            
-            <div className="absolute bottom-[0] md:h-[393px] h-[616px] right-[1%] w-[38%] sm:w-full">
-              <Img
-                className="absolute h-[393px] left-[5%] object-cover top-[4%] w-4/5"
-                src="images/img_container.png"
-                alt="container"
-              />
-              <Img
-                className="absolute bottom-[0] h-[330px] object-cover right-[0] rounded-[14px] w-[67%]"
-                src="images/img_container_330x345.png"
-                alt="container_One"
-              />
-              <Button
-                className="absolute flex h-[66px] items-center justify-center left-[0] rounded-[10px] top-[0] w-[66px]"
-                shape="round"
-              >
-                <Img
-                  className="h-[33px]"
-                  src="images/img_signal.svg"
-                  alt="signal"
-                />
-              </Button>
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div className="grid grid-cols-2 gap-4">
+          <div className=" p-8 h-auto md:h-16">
+  <Text
+    className="leading-[75.00px] sm:text-[37px] md:text-[43px] text-[51px] text-blue_gray-800 w-full"
+    size="txtVigaRegular51"
+  >
+    <span className="text-black-900_b5 tracking-[0.51px] font-mazzard text-left font-semibold">
+      Provide you with an Awesome AI-driven{" "}
+    </span>
+    <span className="text-blue-600 tracking-[0.51px] font-mazzard text-left font-semibold">
+      Trading.
+    </span>
+  </Text>
+  <Text
+    className="leading-[40.00px] text-2xl md:text-[22px] text-gray-500 sm:text-xl w-[89%] sm:w-full"
+    size="txtMulishRegular24"
+  >
+    Lorem ipsum dolor sit amet consectetur. Enim a tincidunt sem libero quam id
+    ut vulputate. Faucibus semper cras imperdiet morbi tristique vulputate.
+    Augue.
+  </Text>
+</div>
+
+  <div className="bg-green-500 p-4">
+    test
             </div>
+  {/* Remove the third grid item */}
+  {/* Add more items as needed */}
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           
-          </div>
           <Text
             className="capitalize mt-[140px] mx-auto sm:text-4xl md:text-[38px] text-[40px] text-black-900 text-center"
             size="txtPoppinsSemiBold40"
