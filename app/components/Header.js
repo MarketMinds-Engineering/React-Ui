@@ -16,20 +16,20 @@ const Header = () => {
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <Link href="/">
          
-            <Image src="/images/Marketminds_Logo.png" width={150} height={150} />
+            <Image src="/images/Marketminds_Logo(1).png" width={150} height={150} />
           
         </Link>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
           <Link className="mr-6 hover:text-gray-900" href="/">
             Home
           </Link>
-          <Link className="mr-6 hover:text-gray-900" href="/about">
+          <Link className="mr-6 hover:text-gray-900" href="#how-it-works">
             How It Works
           </Link>
-          <Link className="mr-6 hover:text-gray-900" href="/faq">
+          <Link className="mr-6 hover:text-gray-900" href="#faq">
             FAQs
           </Link>
-          <Link className="mr-6 hover:text-gray-900" href="/contact">
+          <Link className="mr-6 hover:text-gray-900" href="#contact">
             Contact
           </Link>
           {session ? (
@@ -42,7 +42,7 @@ const Header = () => {
                 Login
               </Link>
               <Link href="/registerr">
-                <button className="bg-blue-600 text-white font-bold cursor-pointer px-6 py-2 mr-10">Register</button>
+                <button className="bg-blue-400 text-white font-bold cursor-pointer px-6 py-2 mr-10">Register</button>
               </Link>
             </>
           )}

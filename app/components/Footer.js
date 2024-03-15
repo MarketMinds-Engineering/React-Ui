@@ -19,10 +19,10 @@ const Footer = () => {
         <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Quick Links</h2>
         <nav class="list-none mb-10">
           <li>
-            <a href='/about' class="text-gray-600 hover:text-gray-800">How It Works</a>
+            <a href='#how-it-works' class="text-gray-600 hover:text-gray-800">How It Works</a>
           </li>
           <li>
-            <a href='/about' class="text-gray-600 hover:text-gray-800">Why Choose Us</a>
+            <a href='#how-it-works' class="text-gray-600 hover:text-gray-800">Why Choose Us</a>
           </li>
         </nav>
       </div>
@@ -43,10 +43,10 @@ const Footer = () => {
         <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Contact</h2>
         <nav class="list-none mb-10">
           <li>
-            <a href='/contact'class="text-gray-600 hover:text-gray-800">Contact Us</a>
+            <a href='#contact'class="text-gray-600 hover:text-gray-800">Contact Us</a>
           </li>
           <li>
-            <a href='/faq' class="text-gray-600 hover:text-gray-800">FAQ</a>
+            <a href='#faq' class="text-gray-600 hover:text-gray-800">FAQ</a>
           </li>
         </nav>
       </div>
